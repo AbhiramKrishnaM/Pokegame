@@ -6,10 +6,10 @@ class Pokecard extends Component {
 
     
     render(){
-        
-        let len = (this.props.id).length === 1 ? '00' : '0';
+       
+        let len = (number) => (number <= 999 ? `00${number}`.slice(-3) : number) 
 
-        let imgSource = `${url}${len}${this.props.id}.png`;
+        let imgSource = `${url}${len(this.props.id)}.png`;
         return(
             <div className="Pokecard">
                <h1>{this.props.name}</h1> 
