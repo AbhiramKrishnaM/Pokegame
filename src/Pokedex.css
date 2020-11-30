@@ -4,3 +4,9 @@
   flex-wrap: wrap;
   /* flex-direction: column; */
 }
+.Winner {
+  color: green;
+}
+.Loser {
+  color: red;
+}

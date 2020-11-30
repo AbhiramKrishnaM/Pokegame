@@ -39,6 +39,7 @@ class Pokegame extends Component {
                 <h1>Pokegame!</h1>
                 <Pokedex hand="First"  pokemon={hand1} exp={exp} isWinner={exp > exp2}/>
                 <Pokedex hand="Second" pokemon={hand2} exp={exp2} isWinner={exp2 > exp}/>
+                
             </div>
         )
     }
